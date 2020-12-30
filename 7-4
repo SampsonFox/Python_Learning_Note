@@ -1,0 +1,13 @@
+toppings = []
+while 1:
+    topping = input('\nPlz add your toppings \n (put quit when you are finished): ')
+    if topping != 'quit':
+        toppings.append(topping)
+        print('\nThe topping ' + topping + ' has been added!')
+    else:
+        break
+
+print('End of the list, the pizza will have\n')
+
+for top in toppings:
+    print(top)
